@@ -1,0 +1,9 @@
+name: esempio worklow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: action/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, World!
